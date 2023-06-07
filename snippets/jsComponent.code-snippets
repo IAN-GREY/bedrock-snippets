@@ -1,0 +1,495 @@
+// jsComponent copy.code-snippets 文件如下配置
+{
+    "import bedrock": {
+        "prefix": "bedrock",
+        "body": [
+            "import { ${0} } from '@bedrock/components;",
+        ],
+    },
+    "bedrock-Tooltip": {
+        "prefix": "Tooltip",
+        "body": [
+            "<Tooltip title='${0}'>",
+            "    <span>Tooltip will show on mouse enter.</span>",
+            "</Tooltip>"
+        ],
+    },
+    "bedrock-Button": {
+        "prefix": "Button",
+        "body": [
+            "<Button type=\"${1|default,primary,dashed,text,link|}\">",
+            "    ${2:Input Button Name}",
+            "</Button>"
+        ],
+    },
+    "bedrock-Divider": {
+        "prefix": "Divider",
+        "body": [
+            "<Divider />"
+        ],
+    },
+    "bedrock-Row": {
+        "prefix": "Row",
+        "body": [
+            "<Row>",
+            "   <Col span={24}>${1:col}</Col>",
+            "</Row>"
+        ],
+    },
+    "bedrock-Layout": {
+        "prefix": "Layout",
+        "body": [
+            "<Layout>",
+            "    <Header>Header</Header>",
+            "    <Content>Content</Content>",
+            "    <Footer>Footer</Footer>",
+            "</Layout>",
+        ],
+    },
+    "bedrock-Space": {
+        "prefix": "Space",
+        "body": [
+            "<Space>",
+            "    ${0}",
+            "</Space>"
+        ],
+    },
+    "bedrock-Anchor": {
+        "prefix": "Anchor",
+        "body": [
+            "<Anchor>",
+            "    <Link href='#components-anchor-demo-basic' title='Basic demo' />",
+            "    <Link href='#components-anchor-demo-static' title='Static demo' />",
+            "    <Link href='#api' title='API'>",
+            "        <Link href='#anchor-props' title='Anchor Props' />",
+            "        <Link href='#link-props' title='Link Props' />",
+            "    </Link>",
+            "</Anchor>",
+        ],
+    },
+    "bedrock-Breadcrumb": {
+        "prefix": "Breadcrumb",
+        "body": [
+            "<Breadcrumb>",
+            "    <Breadcrumb.Item>Home</Breadcrumb.Item>",
+            "    <Breadcrumb.Item>Application</Breadcrumb.Item>",
+            "</Breadcrumb>",
+        ],
+    },
+    "bedrock-Dropdown": {
+        "prefix": "Dropdown",
+        "body": [
+            "<Dropdown menu={{ items }}>",
+            "    <a>Hover me</a>",
+            "</Dropdown>",
+        ],
+    },
+    "bedrock-Pagination": {
+        "prefix": "Pagination",
+        "body": [
+            "<Pagination defaultCurrent={1} total={50} />",
+        ],
+    },
+    "bedrock-Steps": {
+        "prefix": "Steps",
+        "body": [
+            "<Steps items={items} />",
+        ],
+    },
+    "bedrock-AutoComplete": {
+        "prefix": "AutoComplete",
+        "body": [
+            " <AutoComplete",
+            "    options={options}",
+            "    style={{ width: 200, }}",
+            "    onSelect={onSelect}",
+            "    onSearch={onSearch}",
+            "    placeholder='input here'",
+            " />",
+        ],
+    },
+    "bedrock-Cascader": {
+        "prefix": "Cascader",
+        "body": [
+            "<Cascader options={options} onChange={onChange} placeholder='Please select' />",
+        ],
+    },
+    "bedrock-DatePicker": {
+        "prefix": "DatePicker",
+        "body": [
+            "<DatePicker onChange={onChange} />",
+        ],
+    },
+    "bedrock-Form-hooks": {
+        "prefix": "Form",
+        "body": [
+            
+            "const [form] = Form.useForm();",
+            "<Form {...layout} form={form} name=\"control-hooks\" onFinish={onFinish}>",
+            "    <Form.Item name=\"note\" label=\"Note\" rules={[ { required: true, } ]} >",
+            "        <Input />",
+            "    </Form.Item>",
+            "</Form>",
+        ],
+    },
+    "bedrock-Form-class": {
+        "prefix": "Form",
+        "body": [
+            "formRef = React.createRef();",
+            " <Form {...layout} ref={this.formRef} name=\"control-ref\" onFinish={this.onFinish}>",
+            "    <Form.Item name=\"note\" label=\"Note\" rules={[ { required: true, } ]} >",
+            "        <Input />",
+            "    </Form.Item>",
+            "</Form>",
+        ],
+    },
+    "bedrock-Input": {
+        "prefix": "Input",
+        "body": [
+            "<Input placeholder='${0}' />",
+        ],
+    },
+    "bedrock-InputNumber": {
+        "prefix": "InputNumber",
+        "body": [
+            "<InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />",
+        ],
+    },
+    "bedrock-Mentions": {
+        "prefix": "Mentions",
+        "body": [
+            "<Mentions onChange={onChange}>",
+            "    <Option value='afc163'>afc163</Option>",
+            "    <Option value='zombieJ'>zombieJ</Option>",
+            "</Mentions>",
+        ],
+    },
+    "bedrock-Radio": {
+        "prefix": "Radio",
+        "body": [
+            "<Radio.Group onChange={onChange} value={value}>",
+            "    <Radio value={1}>A</Radio>",
+            "    <Radio value={2}>B</Radio>",
+            "</Radio.Group>",
+        ],
+    },
+    "bedrock-Rate": {
+        "prefix": "Rate",
+        "body": [
+            "<Rate />",
+        ],
+    },
+    "bedrock-Select": {
+        "prefix": "Select",
+        "body": [
+            "<Select onChange={handleChange} options={[{ value: 'a', label: 'a' }]}/>",
+        ],
+    },
+    "bedrock-Slider": {
+        "prefix": "Slider",
+        "body": [
+            "<Slider defaultValue={30} disabled={disabled} />",
+        ],
+    },
+    "bedrock-Switch": {
+        "prefix": "Switch",
+        "body": [
+            "<Switch defaultChecked onChange={onChange} />",
+        ],
+    },
+    "bedrock-TimePicker": {
+        "prefix": "TimePicker",
+        "body": [
+            "<TimePicker onChange={onChange} defaultOpenValue={dayjs('00:00:00', 'HH:mm:ss')} />",
+        ],
+    },
+    "bedrock-Transfer": {
+        "prefix": "Transfer",
+        "body": [
+            "$BLOCK_COMMENT_START https://bedrock.netease.com/components/transfer $BLOCK_COMMENT_START",
+        ],
+    },
+    "bedrock-TreeSelect": {
+        "prefix": "TreeSelect",
+        "body": [
+            "<TreeSelect",
+            "    showSearch",
+            "    allowClear",
+            "    multiple={false}",
+            "    placeholder='Please select'",
+            "    treeData={[{ value: 'value', title: 'title', children: [] }]}",
+            "    onChange={(value) => console.log(value)}",
+    
+            "/>",
+        ],
+    },
+    "bedrock-Upload": {
+        "prefix": "Upload",
+        "body": [
+            "<Upload {...props}>",
+            "    <Button icon={<UploadOutlined />}>Click to Upload</Button>",
+            "</Upload>",
+        ],
+    },
+    "bedrock-Avatar": {
+        "prefix": "Avatar",
+        "body": [
+            "<Avatar size={64} icon={<UserOutlined />} />",
+        ],
+    },
+    "bedrock-Badge": {
+        "prefix": "Badge",
+        "body": [
+            "<Badge count={5}>",
+            "    ${0}",
+            "</Badge>",
+        ],
+    },
+    "bedrock-Calendar": {
+        "prefix": "Calendar",
+        "body": [
+            "<Calendar onPanelChange={onPanelChange} />",
+        ],
+    },
+    "bedrock-Card": {
+        "prefix": "Card",
+        "body": [
+            "<Card",
+            "    title='${0}'",
+            "    extra={<a href=''>More</a>}",
+            ">",
+            "    <p>Card content</p>",
+            "    <p>Card content</p>",
+            "    <p>Card content</p>",
+            "</Card>",
+        ],
+    },
+    "bedrock-Carousel ": {
+        "prefix": "Carousel",
+        "body": [
+            "<Carousel afterChange={onChange}>",
+            "    <div>Card content</div>",
+            "    <div>Card content</div>",
+            "</Carousel>",
+        ],
+    },
+    "bedrock-Collapse  ": {
+        "prefix": "Collapse",
+        "body": [
+            "<Collapse defaultActiveKey={['1']} onChange={onChange}>",
+            "    <Panel header='This is panel header' key='1'>",
+            "     //",
+            "    </Panel>",
+            "</Collapse>",
+        ],
+    },
+    "bedrock-Descriptions": {
+        "prefix": "Descriptions",
+        "body": [
+            " <Descriptions title='${0}'>",
+            "    <Descriptions.Item label='UserName'>Zhou Maomao</Descriptions.Item>",
+            "</Descriptions>",
+        ],
+    },
+    "bedrock-Empty": {
+        "prefix": "Empty",
+        "body": [
+            "<Empty />",
+        ],
+    },
+    "bedrock-Image": {
+        "prefix": "Image",
+        "body": [
+            "<Image",
+            "    width={200}",
+            "    src='https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'",
+            "/>",
+        ],
+    },
+    "bedrock-List": {
+        "prefix": "List",
+        "body": [
+            "<List",
+            "    header={<div>Header</div>}",
+            "    footer={<div>Footer</div>}",
+            "    bordered",
+            "    dataSource={data}",
+            "    renderItem={(item) => (",
+            "    <List.Item>",
+            "    <Typography.Text mark>[ITEM]</Typography.Text> {item}",
+            "    </List.Item>",
+            "    )}",
+            "/>",
+        ],
+    },
+    "bedrock-Popover": {
+        "prefix": "Popover",
+        "body": [
+            "<Popover content={content} title='${0}'>",
+            "    <Button type='primary'>Hover me</Button>",
+            "</Popover>",
+        ],
+    },
+    "bedrock-Segmented": {
+        "prefix": "Segmented",
+        "body": [
+            "<Segmented options={['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly']} />",
+        ],
+    },
+    "bedrock-Statistic": {
+        "prefix": "Statistic ",
+        "body": [
+            "<Statistic title='Active Users' value={112893} />",
+        ],
+    },
+    "bedrock-Table": {
+        "prefix": "Table",
+        "body": [
+             
+            "<Table dataSource={dataSource} columns={columns} />",
+        ],
+    },
+    "bedrock-Tabs": {
+        "prefix": "Tabs",
+        "body": [
+            "<Tabs items={[{ label: '项目 1', key: 'item-1', children: '内容 1' }]} />",
+        ],
+    },
+    "bedrock-Tag": {
+        "prefix": "Tag ",
+        "body": [
+            "<Tag>Tag 1</Tag>",
+        ],
+    },
+    "bedrock-Timeline": {
+        "prefix": "Timeline",
+        "body": [
+            "<Timeline>",
+            "    <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>",
+            "    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>",
+            "    <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>",
+            "    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>",
+            "</Timeline>",
+        ],
+    },
+    "bedrock-Tree": {
+        "prefix": "Tree",
+        "body": [
+           
+            "<Tree",
+            "    checkable",
+            "    defaultExpandedKeys={['0-0-0', '0-0-1']}",
+            "    defaultSelectedKeys={['0-0-0', '0-0-1']}",
+            "    defaultCheckedKeys={['0-0-0', '0-0-1']}",
+            "    onSelect={onSelect}",
+            "    onCheck={onCheck}",
+            "    treeData={treeData}",
+            "/>",
+        ],
+    },
+    "bedrock-Alert": {
+        "prefix": "Alert",
+        "body": [
+            "<Alert message='${0} type='success' />",
+        ],
+    },
+    "bedrock-Drawer": {
+        "prefix": "Drawer",
+        "body": [
+            "<Drawer title='${0}' placement='right' onClose={onClose} open={open}>",
+            "    <p>Some contents...</p>",
+            "</Drawer>",
+        ],
+    },
+    "bedrock-message": {
+        "prefix": "message",
+        "body": [
+            "message.${1|info,error,warning|}(\"${2:input your message}\");",
+        ],
+    },
+    "bedrock-Modal": {
+        "prefix": "Modal",
+        "body": [
+            "<Modal",
+            "    title='${1:Basic Modal}'",
+            "    onOk={() => { }}",
+            "    onCancel={() => { }}",
+            "    visible={true}",
+            "    width={600}",
+            ">",
+            "    <div>",
+            "         //",
+            "    </div>",
+            "</Modal>",
+        ],
+    },
+    "bedrock-notification": {
+        "prefix": "notification",
+        "body": [
+            "notification.open({",
+            "    message: 'Notification Title',",
+            "    description: 'This is content'",
+            "    onClick: () => { console.log('Notification Clicked!'); }",
+            "});",
+        ],
+    },
+    "bedrock-Popconfirm": {
+        "prefix": "Popconfirm",
+        "body": [
+            "<Popconfirm",
+            "    title='Are you sure to delete this task?'",
+            "    onConfirm={confirm}",
+            "    onCancel={cancel}",
+            "    okText='Yes'",
+            "    cancelText='No'",
+            ">",
+            "    <a href='#'>Delete</a>",
+            "</Popconfirm>",
+        ],
+    },
+    "bedrock-Progress": {
+        "prefix": "Progress",
+        "body": [
+            "<Progress percent={30} />",
+        ],
+    },
+    "bedrock-Result": {
+        "prefix": "Result",
+        "body": [
+            "<Result",
+            "    status='success'",
+            "    title='Successfully Purchased Cloud Server ECS!'",
+            "    subTitle='Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait.'",
+            "    extra={[",
+            "        <Button type='primary' key='console'>",
+            "            Go Console",
+            "        </Button>,",
+            "        <Button key='buy'>Buy Again</Button>",
+            "    ]}",
+            "/>",
+        ],
+    },
+    "bedrock-Spin": {
+        "prefix": "Spin",
+        "body": [
+            "<Spin spinning={loading}>",
+            "    content",
+            "</Spin>",
+        ],
+    },
+    "bedrock-ConfigProvider ": {
+        "prefix": "ConfigProvider",
+        "body": [
+            "<ConfigProvider >",
+            "    $BLOCK_COMMENT_START   $BLOCK_COMMENT_END",
+            "</ConfigProvider>",
+        ],
+    },
+    "bedrock-FloatButton  ": {
+        "prefix": "FloatButton",
+        "body": [
+             
+            "<FloatButton onClick={() => console.log('click')} />",
+        ],
+    },
+}

@@ -1,0 +1,51 @@
+{
+    "name": "bedrock",
+    "displayName": "Bedrock Design (Bedrock Snippets)",
+    "description": "Bedrock-Design Snippets for VS Code",
+    "version": "0.0.4",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "icon": "logo.png",
+    "license": "MIT",
+    "publisher": "shenlinwei",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/IAN-GREY/bedrock-snippets"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/jsComponent.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/jsComponent.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/jsComponent.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/jsComponent.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/jsComponent.code-snippets"
+            },
+            {
+                "language": "handlebars",
+                "path": "./snippets/jsComponent.code-snippets"
+            },
+            {
+                "language": "razor",
+                "path": "./snippets/jsComponent.code-snippets"
+            }
+        ]
+    }
+}
